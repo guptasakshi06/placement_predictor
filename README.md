@@ -78,3 +78,6 @@ The app will open automatically in your browser (if it doesn't, open the link sh
 - Try different models (Random Forest, XGBoost) for better accuracy
 - Improve the app's UI
 
+
+# Author
+- Sakshi Gupta
