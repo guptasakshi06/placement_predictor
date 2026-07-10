@@ -20,9 +20,9 @@ The model has been deployed using **Streamlit** as a simple web app, where users
 |------|-------------|
 | `Placement_end_to_end_ml.ipynb` | Notebook containing the complete code for loading data, cleaning, EDA, model training, and exporting the model (`model.pkl`) |
 | `placement.csv` | Dataset containing CGPA, IQ, and placement status |
-| `model.pkl` | Trained Logistic Regression model (pickle format) |
-| `app.py` | Streamlit app that loads the model and generates predictions |
-| `requirements.txt` | Python libraries required for this project |
+| `model.pkl` | Legacy model exported by the notebook (the app does not load it) |
+| `app.py` | Streamlit app that trains one cached preprocessing-and-classification pipeline and generates predictions |
+| `requirements.txt` | Direct Python dependencies required to deploy the app |
 
 ## How to Run This Project
 
@@ -63,12 +63,12 @@ The app will open automatically in your browser (if it doesn't, open the link sh
 - **Algorithm:** Logistic Regression
 - **Input Features:** CGPA, IQ
 - **Output:** Placement (1 = Placed, 0 = Not Placed)
-- **Accuracy:** ~90% (on test data)
+- **Accuracy:** ~91% mean accuracy in 5-fold stratified cross-validation
 
 ## Tech Stack
 
 - Python
-- Pandas, NumPy
+- Pandas, NumPy (notebook exploration)
 - Scikit-learn
 - Streamlit
 
